@@ -25,7 +25,11 @@ function FooterLogo() {
     >
       <img
         src={`src/assets/${themesList[themeIndex]}.png`}
-        alt="Un parachutiste"
+        alt={`${
+          (themeIndex === 0 && 'Un parachutiste militaire') ||
+          (themeIndex === 1 && "Un casque de chantier remplit d'outils") ||
+          (themeIndex === 2 && "Le symbole d'une balise html")
+        }`}
       />
     </div>
   );

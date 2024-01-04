@@ -1,1 +1,1 @@
-export default ['parachutiste', 'building4', 'dev'];
+export default ['parachutiste', 'building', 'dev'];
