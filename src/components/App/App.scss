@@ -1,36 +1,47 @@
+@use '../../styles/variables' as v;
+
 .App {
-	text-align: center;
+  background-color: v.$main-bg-color;
+  color: v.$main-font-color;
 
-	&-logo {
-		height: 40vmin;
-		pointer-events: none;
+  .parachutiste {
+    font-family: 'Nova Square', sans-serif;
+    padding: 0.2 * v.$gap;
+    background: v.$para-border-gradient;
+  }
 
-		@media (prefers-reduced-motion: no-preference) {
-			animation: App-logo-spin infinite 20s linear;
-		}
-	}
+  .building4 {
+    font-family: 'Nova Square', sans-serif;
+    padding: 0.2 * v.$gap;
+    background: v.$build-border-gradient;
+  }
 
-	&-header {
-		background-color: #282c34;
-		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		font-size: calc(10px + 2vmin);
-		color: #fff;
-	}
+  .dev {
+    font-family: 'Nova Square', sans-serif;
+    padding: 0.2 * v.$gap;
+    background: v.$dev-border-gradient;
+  }
 
-	&-link {
-		color: #61dafb;
-	}
-}
+  .custom-border {
+    .app-wrapper {
+      background-color: v.$main-bg-color;
+      padding: v.$gap;
+      height: 99vh;
 
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+      header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .main-wrapper {
+        margin-top: calc(4.5 * v.$gap);
+      }
+
+      footer {
+        position: absolute;
+        bottom: v.$gap;
+        font-size: 0.8rem;
+      }
+    }
+  }
 }

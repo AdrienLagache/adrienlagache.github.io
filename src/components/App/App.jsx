@@ -1,15 +1,35 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
-import { changeInputText } from '../../services/actions/layoutActions';
+import Header from '../Header/Header';
+import Overview from '../Overview/Overview';
+import Projects from '../Projects/Projects';
+import HeaderLogo from '../HeaderLogo/HeaderLogo';
+import FooterLogo from '../FooterLogo/FooterLogo';
+import themesList from '../../datas/themes';
 
 import './App.scss';
 
 function App() {
-  const dispatch = useDispatch();
-  const inputText = useSelector((state) => state.layout.inputText);
+  const themeIndex = useSelector((state) => state.theme.themeIndex);
 
   return (
     <div className="App">
+      <div className={`custom-border ${themesList[themeIndex]}`}>
+        <div className="app-wrapper">
+          <header>
+            <HeaderLogo />
+            <Header />
+          </header>
+          <main className="main-wrapper">
+            <Overview />
+            <Projects />
+          </main>
+          <footer>
+            <p>Lorem ipsum dolor sit amet 2024</p>
+          </footer>
+          <FooterLogo />
+        </div>
+      </div>
     </div>
   );
 }

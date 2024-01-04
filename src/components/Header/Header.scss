@@ -1,0 +1,16 @@
+.header-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: baseline;
+
+  .header-network {
+    position: relative;
+    bottom: 0.3rem;
+
+    .header-network__pic {
+      width: 1.8rem;
+      margin: 0.2rem 0;
+    }
+  }
+}

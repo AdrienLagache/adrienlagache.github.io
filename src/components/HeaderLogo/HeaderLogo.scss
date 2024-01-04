@@ -1,0 +1,38 @@
+@use '../../styles/variables' as v;
+
+.header-logo__parachutiste {
+  color: v.$para-border-color;
+}
+
+.header-logo__building4 {
+  color: v.$build-border-color;
+}
+
+.header-logo__dev {
+  color: v.$dev-border-color;
+}
+
+.header-logo__letter {
+  position: absolute;
+  top: v.$gap;
+  left: v.$gap;
+  font-size: v.$logo-letter;
+}
+
+#l-letter {
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+
+#firstname {
+  font-size: v.$h1-font-size;
+  position: relative;
+  left: -0.4rem;
+}
+
+#name {
+  font-size: v.$h1-font-size;
+  position: relative;
+  left: 0.3rem;
+}

@@ -4,14 +4,14 @@ import {
   applyMiddleware,
   combineReducers,
 } from 'redux';
-import layoutReducer from '../reducers/layoutReducer';
+import themeReducer from '../reducers/themeReducer';
 
 const middlewares = [];
 const middlewareEnhancer = applyMiddleware(...middlewares);
 const enhancer = composeWithDevTools(middlewareEnhancer);
 
 const reducer = combineReducers({
-  layout: layoutReducer,
+  theme: themeReducer,
 });
 
 const store = createStore(reducer, enhancer);

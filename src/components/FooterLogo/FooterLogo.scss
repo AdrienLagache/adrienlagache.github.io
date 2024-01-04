@@ -1,0 +1,9 @@
+@use '../../styles/variables' as v;
+
+.footer-logo img {
+  position: absolute;
+  bottom: v.$gap;
+  right: v.$gap;
+  width: 6rem;
+  min-height: 6rem;
+}

@@ -1,0 +1,43 @@
+@use '../../styles/variables' as v;
+
+.projects-wrapper {
+  margin-top: 5 * v.$gap;
+  margin-left: 50%;
+
+  .projects-title {
+    font-size: v.$h1-font-size;
+    margin-bottom: v.$gap;
+  }
+
+  .projects-nav__parachutiste {
+    border-left: 1px solid v.$para-border-color;
+  }
+
+  .projects-nav__building4 {
+    border-left: 1px solid v.$build-border-color;
+  }
+
+  .projects-nav__dev {
+    border-left: 1px solid v.$dev-border-color;
+  }
+
+  .projects-nav {
+    padding-left: v.$gap;
+
+    .projects-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: calc(1 / 3 * v.$gap);
+
+      .projects-list__link {
+        font-size: 1.2rem;
+      }
+
+      .projects-list__link:hover {
+        transition: 0.5s;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

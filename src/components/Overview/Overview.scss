@@ -1,0 +1,27 @@
+@use '../../styles/variables' as v;
+
+.overview-wrapper {
+  .overview-title {
+    font-size: v.$h1-font-size;
+    margin-bottom: v.$gap;
+  }
+
+  .overview-description__para {
+    border-left: solid 1px v.$para-border-color;
+    padding-left: 0.8 * v.$gap;
+  }
+
+  .overview-description__build {
+    border-left: solid 1px v.$build-border-color;
+    padding-left: 0.8 * v.$gap;
+  }
+
+  .overview-description__dev {
+    border-left: solid 1px v.$dev-border-color;
+    padding-left: 0.8 * v.$gap;
+  }
+
+  :last-child {
+    margin-top: v.$gap;
+  }
+}

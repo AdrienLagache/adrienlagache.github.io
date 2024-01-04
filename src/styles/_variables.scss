@@ -1,4 +1,37 @@
-/*
-Définition de variables Sass, par exemple :
-$color: #282c34;
-*/
+//___________COLORS_________//
+// Backgrounds
+$main-bg-color: black;
+
+// Borders //
+$para-border-color: #6d7042;
+$build-border-color: #ecb71c;
+$dev-border-color: #0082c6;
+$para-border-gradient: linear-gradient(
+  135deg,
+  $main-bg-color 10%,
+  $para-border-color 10% 90%,
+  $main-bg-color 10%
+);
+$build-border-gradient: linear-gradient(
+  135deg,
+  $main-bg-color 10%,
+  $build-border-color 10% 90%,
+  $main-bg-color 10%
+);
+$dev-border-gradient: linear-gradient(
+  135deg,
+  $main-bg-color 10%,
+  $dev-border-color 10% 90%,
+  $main-bg-color 10%
+);
+
+// Font
+$main-font-color: white;
+$main-font-size: 0.8rem;
+$h1-font-size: 2rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1rem;
+$logo-letter: 6rem;
+
+//___________MEASUREMENTS__________//
+$gap: 1rem;
