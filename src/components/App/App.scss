@@ -23,25 +23,29 @@
   }
 
   .custom-border {
+    padding: calc(1 / 3 * v.$gap);
+
     .app-wrapper {
       background-color: v.$main-bg-color;
       padding: v.$gap;
-      height: 99vh;
+      height: 98.7vh;
 
       header {
         display: flex;
         justify-content: space-between;
       }
 
-      .main-wrapper {
-        margin-top: calc(4.5 * v.$gap);
-      }
-
       footer {
         position: absolute;
         bottom: v.$gap;
-        font-size: 0.8rem;
+        font-size: v.$footer-font-size;
       }
     }
+  }
+}
+
+@media (min-width: 900px) {
+  header {
+    align-items: center;
   }
 }

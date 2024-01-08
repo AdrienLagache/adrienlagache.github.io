@@ -4,8 +4,8 @@ function Header() {
   return (
     <div className="header-wrapper">
       <nav className="header-network">
-        <ul>
-          <li>
+        <ul className="header-network__list">
+          <li className="header-network__item">
             <a href="https://www.linkedin.com/in/adrien-lagache-163462282/">
               <img
                 className="header-network__pic"
@@ -14,7 +14,7 @@ function Header() {
               />
             </a>
           </li>
-          <li>
+          <li className="header-network__item">
             <a href="mailto:lagacheadrien64@gmail.com">
               <img
                 className="header-network__pic"
@@ -23,7 +23,7 @@ function Header() {
               />
             </a>
           </li>
-          <li>
+          <li className="header-network__item">
             <a href="https://github.com/AdrienLagache">
               <img
                 className="header-network__pic"

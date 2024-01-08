@@ -24,9 +24,7 @@ function App() {
             <Overview />
             <Projects />
           </main>
-          <footer>
-            <p>Lorem ipsum dolor sit amet 2024</p>
-          </footer>
+          <footer>{/* <p>Lorem ipsum dolor sit amet 2024</p> */}</footer>
           <FooterLogo />
         </div>
       </div>

@@ -3,9 +3,9 @@
 $main-bg-color: black;
 
 // Borders //
-$para-border-color: #6d7042;
-$build-border-color: #ecb71c;
-$dev-border-color: #0082c6;
+$para-border-color: #8a8c67;
+$build-border-color: #f8a432;
+$dev-border-color: #329bd1;
 $para-border-gradient: linear-gradient(
   135deg,
   $main-bg-color 10%,
@@ -27,10 +27,11 @@ $dev-border-gradient: linear-gradient(
 
 // Font
 $main-font-color: white;
-$main-font-size: 0.8rem;
+$footer-font-size: 0.8rem;
+$main-font-size: 1rem;
 $h1-font-size: 2rem;
 $h2-font-size: 1.5rem;
-$h3-font-size: 1rem;
+// $h3-font-size: 1rem;
 $logo-letter: 6rem;
 
 //___________MEASUREMENTS__________//

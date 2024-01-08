@@ -6,38 +6,45 @@ import themesList from '../../datas/themes';
 import './Projects.scss';
 
 function Projects() {
-  const isDesktop = useMediaQuery({ query: '(min-width: 900px)' });
+  const isDesktop = useMediaQuery({ query: '(min-width: 1220px)' });
   const themeIndex = useSelector((state) => state.theme.themeIndex);
 
   return (
     <section className="projects-wrapper">
-      <h2 className="projects-title">Projets</h2>
-      <nav className={`projects-nav projects-nav__${themesList[themeIndex]}`}>
+      <h1
+        className={`projects-title projects-title__${themesList[themeIndex]}`}
+      >
+        Projets
+      </h1>
+      <nav className="projects-nav">
         <ul className="projects-list">
           <li className="projects-list__item">
-            <p>
-              <a className="projects-list__link" href="https://cfdr.fr">
-                C.F.D.R.
-              </a>
-              {isDesktop &&
-                ' - projet pour le Championnat Francophone Dirt Rally 2.0'}
-            </p>
+            <a
+              className={`projects-list__link projects-list__${themesList[themeIndex]}`}
+              href="https://cfdr.fr"
+            >
+              C.F.D.R.
+              {isDesktop && (
+                <span>&ensp;- Championnat Francophone Dirt Rally 2.0</span>
+              )}
+            </a>
           </li>
           <li>
-            <p>
-              <a className="projects-list__link" href="https://cfdr.fr">
-                O&apos;Recipe
-              </a>
-              {isDesktop && ' - challenge de formation'}
-            </p>
+            <a
+              className={`projects-list__link projects-list__${themesList[themeIndex]}`}
+              href="https://cfdr.fr"
+            >
+              O&apos;Recipe
+              {isDesktop && <span>&ensp;- challenge de formation</span>}
+            </a>
           </li>
           <li className="projects-list__item">
-            <p>
-              <a className="projects-list__link" href="https://cfdr.fr">
-                MapTalents
-              </a>
-              {isDesktop && '- projet de soutenance'}
-            </p>
+            <a
+              className={`projects-list__link projects-list__${themesList[themeIndex]}`}
+              href="https://cfdr.fr"
+            >
+              MapTalents{isDesktop && <span>&ensp;- projet de soutenance</span>}
+            </a>
           </li>
         </ul>
       </nav>

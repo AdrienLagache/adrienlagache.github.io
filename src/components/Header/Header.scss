@@ -1,9 +1,6 @@
-.header-wrapper {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  align-items: baseline;
+@use '../../styles/variables' as v;
 
+.header-wrapper {
   .header-network {
     position: relative;
     bottom: 0.3rem;
@@ -12,5 +9,14 @@
       width: 1.8rem;
       margin: 0.2rem 0;
     }
+  }
+}
+
+@media (min-width: 900px) {
+  .header-network__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: v.$gap;
   }
 }

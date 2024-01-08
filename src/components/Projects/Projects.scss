@@ -1,7 +1,7 @@
 @use '../../styles/variables' as v;
 
 .projects-wrapper {
-  margin-top: 5 * v.$gap;
+  margin-top: 3 * v.$gap;
   margin-left: 50%;
 
   .projects-title {
@@ -9,21 +9,19 @@
     margin-bottom: v.$gap;
   }
 
-  .projects-nav__parachutiste {
-    border-left: 1px solid v.$para-border-color;
+  .projects-title__parachutiste {
+    text-shadow: 2px 2px 2px v.$para-border-color;
   }
 
-  .projects-nav__building {
-    border-left: 1px solid v.$build-border-color;
+  .projects-title__building {
+    text-shadow: 2px 2px 2px v.$build-border-color;
   }
 
-  .projects-nav__dev {
-    border-left: 1px solid v.$dev-border-color;
+  .projects-title__dev {
+    text-shadow: 2px 2px 2px v.$dev-border-color;
   }
 
   .projects-nav {
-    padding-left: v.$gap;
-
     .projects-list {
       display: flex;
       flex-direction: column;
@@ -31,13 +29,80 @@
       gap: calc(1 / 3 * v.$gap);
 
       .projects-list__link {
-        font-size: 1.2rem;
+        font-size: v.$main-font-size;
       }
 
       .projects-list__link:hover {
         transition: 0.5s;
-        font-size: 1.6rem;
+        font-size: calc(1.5 * v.$main-font-size);
+        padding-left: calc(1 / 2 * v.$gap);
+      }
+
+      .projects-list__parachutiste:hover {
+        border-left: 1px solid v.$para-border-color;
+      }
+
+      .projects-list__building:hover {
+        border-left: 1px solid v.$build-border-color;
+      }
+
+      .projects-list__dev:hover {
+        border-left: 1px solid v.$dev-border-color;
       }
     }
+  }
+}
+
+@media (min-width: 700px) {
+  .projects-wrapper {
+    .projects-title {
+      font-size: calc(1.25 * v.$h1-font-size);
+    }
+
+    .projects-nav {
+      .projects-list {
+        .projects-list__link {
+          font-size: calc(1.25 * v.$main-font-size);
+        }
+
+        .projects-list__link:hover {
+          font-size: calc(1.75 * v.$main-font-size);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .projects-wrapper {
+    margin-top: 5 * v.$gap;
+
+    .projects-title {
+      font-size: calc(1.5 * v.$h1-font-size);
+    }
+
+    .projects-nav {
+      .projects-list {
+        .projects-list__link {
+          font-size: calc(1.5 * v.$main-font-size);
+        }
+
+        .projects-list__link:hover {
+          font-size: calc(2 * v.$main-font-size);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1220px) {
+  .projects-wrapper {
+    margin-left: 33%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .projects-wrapper {
+    margin-left: 40%;
   }
 }

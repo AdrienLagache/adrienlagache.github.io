@@ -28,7 +28,7 @@ function FooterLogo() {
         alt={`${
           (themeIndex === 0 && 'Un parachutiste militaire') ||
           (themeIndex === 1 && "Un casque de chantier remplit d'outils") ||
-          (themeIndex === 2 && "Le symbole d'une balise html")
+          (themeIndex === 2 && "Le symbole d'une balise html dans un cercle")
         }`}
       />
     </div>
