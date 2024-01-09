@@ -58,15 +58,15 @@
     margin: 15% 0;
 
     .overview-title {
-      font-size: calc(1.25 * v.$h1-font-size);
+      font-size: calc(1.2 * v.$h1-font-size);
     }
 
     .overview-description {
-      font-size: calc(1.25 * v.$main-font-size);
+      font-size: calc(1.2 * v.$main-font-size);
     }
 
     .overview-description__static {
-      font-size: calc(1.25 * v.$footer-font-size);
+      font-size: calc(1.2 * v.$footer-font-size);
     }
   }
 }
@@ -76,21 +76,21 @@
     margin: 10% 0;
 
     .overview-title {
-      font-size: calc(1.5 * v.$h1-font-size);
+      font-size: calc(1.4 * v.$h1-font-size);
     }
 
     .overview-description {
-      font-size: calc(1.5 * v.$main-font-size);
+      font-size: calc(1.4 * v.$main-font-size);
     }
 
     .overview-description__static {
-      font-size: calc(1.5 * v.$footer-font-size);
+      font-size: calc(1.4 * v.$footer-font-size);
     }
   }
 }
 
 @media (min-width: 1400px) {
   .overview-wrapper {
-    margin: 7% 0;
+    margin: 7% 5%;
   }
 }

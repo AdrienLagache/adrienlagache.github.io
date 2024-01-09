@@ -14,15 +14,15 @@
 
 .header-logo__letter {
   position: absolute;
-  top: v.$gap;
-  left: v.$gap;
+  top: 0.1rem;
+  left: 0.3rem;
   font-size: v.$logo-letter;
 }
 
 #l-letter {
   position: relative;
-  top: 0.8rem;
-  left: 0.8rem;
+  top: -0.1rem;
+  left: 0.1rem;
 }
 
 #firstname {
@@ -35,4 +35,25 @@
   font-size: v.$h1-font-size;
   position: relative;
   left: 0.3rem;
+}
+
+@media (min-width: 1200px) {
+  .header-logo__letter {
+    font-size: 1.4 * v.$logo-letter;
+  }
+
+  #l-letter {
+    top: 0.2rem;
+    left: 0.6rem;
+  }
+
+  #firstname {
+    font-size: calc(1.2 * v.$h1-font-size);
+    left: -0.6rem;
+  }
+
+  #name {
+    font-size: calc(1.2 * v.$h1-font-size);
+    left: 0.2rem;
+  }
 }

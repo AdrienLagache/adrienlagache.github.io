@@ -21,7 +21,7 @@ function Projects() {
           <li className="projects-list__item">
             <a
               className={`projects-list__link projects-list__${themesList[themeIndex]}`}
-              href="https://cfdr.fr"
+              href="https://github.com/AdrienLagache/CFDR"
             >
               C.F.D.R.
               {isDesktop && (
@@ -32,7 +32,7 @@ function Projects() {
           <li>
             <a
               className={`projects-list__link projects-list__${themesList[themeIndex]}`}
-              href="https://cfdr.fr"
+              href="https://github.com/AdrienLagache/challenge-Orecipes"
             >
               O&apos;Recipe
               {isDesktop && <span>&ensp;- challenge de formation</span>}
@@ -41,7 +41,7 @@ function Projects() {
           <li className="projects-list__item">
             <a
               className={`projects-list__link projects-list__${themesList[themeIndex]}`}
-              href="https://cfdr.fr"
+              href="https://github.com/AdrienLagache/MapTalents/tree/main"
             >
               MapTalents{isDesktop && <span>&ensp;- projet de soutenance</span>}
             </a>

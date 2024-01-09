@@ -28,7 +28,7 @@ function Header() {
               <img
                 className="header-network__pic"
                 src="src/assets/github_icon.png"
-                alt="Le logo de Gmail"
+                alt="Le logo de GitHub"
               />
             </a>
           </li>
