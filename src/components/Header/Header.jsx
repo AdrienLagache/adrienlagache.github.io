@@ -9,7 +9,7 @@ function Header() {
             <a href="https://www.linkedin.com/in/adrien-lagache-163462282/">
               <img
                 className="header-network__pic"
-                src="src/assets/linkedin_icon.png"
+                src="/assets/linkedin_icon.png"
                 alt="Le logo de Linkedin"
               />
             </a>
