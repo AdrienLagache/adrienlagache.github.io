@@ -18,7 +18,7 @@ function Header() {
             <a href="mailto:lagacheadrien64@gmail.com">
               <img
                 className="header-network__pic"
-                src="src/assets/gmail_icon.png"
+                src="/assets/gmail_icon.png"
                 alt="Le logo de Gmail"
               />
             </a>
@@ -27,7 +27,7 @@ function Header() {
             <a href="https://github.com/AdrienLagache">
               <img
                 className="header-network__pic"
-                src="src/assets/github_icon.png"
+                src="/assets/github_icon.png"
                 alt="Le logo de GitHub"
               />
             </a>

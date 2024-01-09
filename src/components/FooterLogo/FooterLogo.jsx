@@ -24,7 +24,7 @@ function FooterLogo() {
       }}
     >
       <img
-        src={`src/assets/${themesList[themeIndex]}.png`}
+        src={`/assets/${themesList[themeIndex]}.png`}
         alt={`${
           (themeIndex === 0 && 'Un parachutiste militaire') ||
           (themeIndex === 1 && "Un casque de chantier remplit d'outils") ||
