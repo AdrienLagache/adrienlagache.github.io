@@ -27,7 +27,7 @@
 
     .app-wrapper {
       background-color: v.$main-bg-color;
-      padding: v.$gap;
+      padding: calc(0.5 * v.$gap);
       height: 98.7vh;
 
       header {

@@ -1,59 +1,66 @@
 @use '../../styles/variables' as v;
 
-.header-logo__parachutiste {
-  color: v.$para-border-color;
+// .header-logo__parachutiste {
+//   color: v.$para-border-color;
+// }
+
+// .header-logo__building {
+//   color: v.$build-border-color;
+// }
+
+// .header-logo__dev {
+//   color: v.$dev-border-color;
+// }
+
+.header-logo img {
+  width: 60%;
 }
 
-.header-logo__building {
-  color: v.$build-border-color;
-}
+// .header-logo__letter {
+//   position: absolute;
+//   top: 0.1rem;
+//   left: 0.3rem;
+//   font-size: v.$logo-letter;
+// }
 
-.header-logo__dev {
-  color: v.$dev-border-color;
-}
+// #l-letter {
+//   position: relative;
+//   top: -0.1rem;
+//   left: 0.1rem;
+// }
 
-.header-logo__letter {
-  position: absolute;
-  top: 0.1rem;
-  left: 0.3rem;
-  font-size: v.$logo-letter;
-}
+// #firstname {
+//   font-size: v.$h1-font-size;
+//   position: relative;
+//   left: -0.4rem;
+// }
 
-#l-letter {
-  position: relative;
-  top: -0.1rem;
-  left: 0.1rem;
-}
-
-#firstname {
-  font-size: v.$h1-font-size;
-  position: relative;
-  left: -0.4rem;
-}
-
-#name {
-  font-size: v.$h1-font-size;
-  position: relative;
-  left: 0.3rem;
-}
+// #name {
+//   font-size: v.$h1-font-size;
+//   position: relative;
+//   left: 0.3rem;
+// }
 
 @media (min-width: 1200px) {
-  .header-logo__letter {
-    font-size: 1.4 * v.$logo-letter;
+  .header-logo img {
+    width: 100%;
   }
+  // .header-logo__letter {
+  //   font-size: 1.4 * v.$logo-letter;
+  // }
 
-  #l-letter {
-    top: 0.2rem;
-    left: 0.6rem;
-  }
+  // #l-letter {
+  //   top: 0.2rem;
+  //   left: 0.6rem;
+  // }
 
-  #firstname {
-    font-size: calc(1.2 * v.$h1-font-size);
-    left: -0.6rem;
-  }
+  // #firstname {
+  //   font-size: calc(1.2 * v.$h1-font-size);
+  //   left: -0.6rem;
+  // }
 
-  #name {
-    font-size: calc(1.2 * v.$h1-font-size);
-    left: 0.2rem;
-  }
+  // #name {
+  //   font-size: calc(1.2 * v.$h1-font-size);
+  //   left: 0.2rem;
+  // }
 }
