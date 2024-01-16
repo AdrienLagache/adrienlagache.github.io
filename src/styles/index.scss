@@ -1,29 +1,8 @@
 @use 'reset';
 @use 'variables' as v;
 
-// @font-face {
-//   font-family: 'Orbitron-Regular';
-//   src: url('../../public/assets/Orbitron-Regular.ttf');
-// }
-
 body {
   margin: 0;
-  // font-family: 'Roboto Mono', monospace;
-  // font-weight: 300;
-  // font-style: normal;
-}
-
-// .roboto-light {
-//   font-family: 'Roboto', sans-serif;
-//   font-weight: 300;
-//   font-style: normal;
-// }
-
-// code {
-//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-//     monospace;
-// }
-
-body {
+  font-family: 'Poppins', sans-serif;
   background: v.$main-bg-color;
 }
