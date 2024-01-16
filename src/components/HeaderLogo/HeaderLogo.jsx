@@ -8,12 +8,16 @@ function HeaderLogo() {
 
   return (
     <div className={`header-logo__${themesList[themeIndex]}`}>
-      <h1 className="header-logo__letter" id="a-letter">
+      {/* <h1 className="header-logo__letter" id="a-letter">
         A<span id="firstname">drien</span>
       </h1>
       <h1 className="header-logo__letter" id="l-letter">
         L<span id="name">agache</span>
-      </h1>
+      </h1> */}
+      <img
+        src={`/assets/header_logo-${themesList[themeIndex]}.png`}
+        alt="Le logo du site"
+      />
     </div>
   );
 }

@@ -1,18 +1,28 @@
 @use 'reset';
 @use 'variables' as v;
 
+// @font-face {
+//   font-family: 'Orbitron-Regular';
+//   src: url('../../public/assets/Orbitron-Regular.ttf');
+// }
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  // font-family: 'Roboto Mono', monospace;
+  // font-weight: 300;
+  // font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+// .roboto-light {
+//   font-family: 'Roboto', sans-serif;
+//   font-weight: 300;
+//   font-style: normal;
+// }
+
+// code {
+//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+//     monospace;
+// }
 
 body {
   background: v.$main-bg-color;
