@@ -1,6 +1,7 @@
 @use '../../styles/variables' as v;
 
 .header-wrapper {
+  margin: auto;
   .header-network {
     position: relative;
     bottom: 0.3em;

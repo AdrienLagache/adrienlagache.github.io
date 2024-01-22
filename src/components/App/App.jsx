@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 
-// import Header from '../Header/Header';
+import Header from '../Header/Header';
 // import Overview from '../Overview/Overview';
 // import Projects from '../Projects/Projects';
 // import HeaderLogo from '../HeaderLogo/HeaderLogo';
@@ -49,11 +49,11 @@ function App() {
               </a>
             </li>
           </ul>
-          {/* <header>
-            <HeaderLogo />
+          <header>
+            {/* <HeaderLogo /> */}
             <Header />
           </header>
-          <main className="main-wrapper">
+          {/* <main className="main-wrapper">
             <Overview />
             <Projects />
           </main> */}
