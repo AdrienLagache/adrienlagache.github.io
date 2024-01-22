@@ -3,6 +3,7 @@
 .App {
   background-color: v.$main-bg-color;
   color: v.$main-font-color;
+  text-align: center;
 
   .parachutiste {
     font-family: 'Nova Square', sans-serif;
@@ -27,8 +28,22 @@
 
     .app-wrapper {
       background-color: v.$main-bg-color;
-      padding: calc(0.5 * v.$gap);
+      padding: calc(10 * v.$gap) 1em;
       height: 98.7vh;
+
+      p {
+        font-size: 2em;
+        margin-bottom: 2em;
+      }
+
+      li {
+        margin: 1em 0;
+      }
+
+      a:hover {
+        font-size: 1.2em;
+        transition: 1s;
+      }
 
       header {
         display: flex;
