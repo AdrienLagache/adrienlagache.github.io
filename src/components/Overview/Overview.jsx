@@ -5,9 +5,8 @@ function Overview() {
   return (
     <section className="overview">
       <p className="overview-description">
-        <em>Développeur web</em> complet maîtrisant les principes du
-        développement avec <strong>PHP</strong> et <strong>Javascript</strong>,
-        ainsi que :{' '}
+        <em>Développeur web</em> complet à l&apos;aise avec <strong>PHP</strong>
+        , <strong>nodeJs</strong> et <strong>Javascript</strong>.
       </p>
       <ul className="overview-list">
         <li className="overview-list__item">
