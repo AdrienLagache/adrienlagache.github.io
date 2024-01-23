@@ -1,0 +1,12 @@
+@use '../../styles/variables' as v;
+
+.networks {
+  .networks__list {
+    display: flex;
+    gap: calc(2 * v.$gap);
+  }
+
+  .networks__pic {
+    width: v.$networks-pics-size;
+  }
+}

@@ -1,38 +1,13 @@
-//___________COLORS_________//
-// Backgrounds
-$main-bg-color: black;
+// MEASUREMENT
+$gap: 1em;
+$h1-font-size: 1.5em;
+$h3-font-size: 1.3em;
+$p-font-size: 1.2em;
+$overview-font-size: 1.5em;
+$networks-pics-size: 1.5em;
 
-// Borders //
-$para-border-color: #8a8c67;
-$build-border-color: #f8a432;
-$dev-border-color: #329bd1;
-$para-border-gradient: linear-gradient(
-  135deg,
-  $main-bg-color 10%,
-  $para-border-color 10% 90%,
-  $main-bg-color 10%
-);
-$build-border-gradient: linear-gradient(
-  135deg,
-  $main-bg-color 10%,
-  $build-border-color 10% 90%,
-  $main-bg-color 10%
-);
-$dev-border-gradient: linear-gradient(
-  135deg,
-  $main-bg-color 10%,
-  $dev-border-color 10% 90%,
-  $main-bg-color 10%
-);
-
-// Font
-$main-font-color: #eee;
-$footer-font-size: 0.8rem;
-$main-font-size: 0.8rem;
-$h1-font-size: 2rem;
-$h2-font-size: 1.5rem;
-// $h3-font-size: 1em;
-$logo-letter: 6rem;
-
-//___________MEASUREMENTS__________//
-$gap: 1rem;
+// COLOR
+$font-color: #676767;
+$header-border-color: #ddd;
+$card-border-color: #bbb;
+$strong-color: #7f00ff;

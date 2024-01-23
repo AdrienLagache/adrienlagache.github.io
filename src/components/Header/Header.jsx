@@ -1,40 +1,29 @@
+import { useEffect, useState } from 'react';
 import './Header.scss';
+import Networks from '../Networks/Networks';
 
 function Header() {
+  const [position, setPosition] = useState(window.pageYOffset);
+  const [visible, setVisible] = useState(true);
+  useEffect(() => {
+    const handleScroll = () => {
+      const moving = window.pageYOffset;
+
+      setVisible(position > moving);
+      setPosition(moving);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  });
+
+  // const cls = visible ? 'visible' : 'hidden';
   return (
-    <div className="header-wrapper">
-      <nav className="header-network">
-        <ul className="header-network__list">
-          <li className="header-network__item">
-            <a href="https://www.linkedin.com/in/adrien-lagache-163462282/">
-              <img
-                className="header-network__pic"
-                src="/assets/linkedin_icon.png"
-                alt="Le logo de Linkedin"
-              />
-            </a>
-          </li>
-          <li className="header-network__item">
-            <a href="mailto:lagacheadrien64@gmail.com">
-              <img
-                className="header-network__pic"
-                src="/assets/gmail_icon.png"
-                alt="Le logo de Gmail"
-              />
-            </a>
-          </li>
-          <li className="header-network__item">
-            <a href="https://github.com/AdrienLagache">
-              <img
-                className="header-network__pic"
-                src="/assets/github_icon.png"
-                alt="Le logo de GitHub"
-              />
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <header className={`header header--${visible ? 'visible' : 'hidden'}`}>
+      <h1>Adrien Lagache</h1>
+      <Networks />
+    </header>
   );
 }
 

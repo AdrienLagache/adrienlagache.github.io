@@ -14,12 +14,8 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "@redux-devtools/extension": "^3.2.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-redux": "^9.0.2",
-    "react-responsive": "^9.0.2",
-    "redux": "^5.0.0",
     "yarn": "^1.22.21"
   },
   "devDependencies": {

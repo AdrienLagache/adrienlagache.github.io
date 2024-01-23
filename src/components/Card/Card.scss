@@ -1,0 +1,60 @@
+@use '../../styles/variables' as v;
+
+.card {
+  width: 65%;
+  margin: auto;
+
+  &-title {
+    margin-top: calc(4 * v.$gap);
+  }
+
+  &-title span {
+    font-weight: bold;
+  }
+
+  &-thumbnail {
+    display: block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 5% 5% 10% 5%;
+    margin-top: v.$gap;
+    border-radius: 5px;
+
+    h3 {
+      font-size: v.$h3-font-size;
+      border-bottom: 1px solid v.$card-border-color;
+      padding: calc(0.4 * v.$gap) 0;
+      margin: calc(1 * v.$gap) 0;
+    }
+
+    p,
+    h3 {
+      opacity: 0;
+      transition: all 400ms ease-out;
+      text-align: center;
+    }
+  }
+
+  &-thumbnail:hover {
+    background-image: none;
+    background-color: rgba(8, 8, 8, 0.1);
+
+    p,
+    h3 {
+      opacity: 1;
+    }
+  }
+
+  &-thumbnail--cfdr {
+    background-image: url('/assets/cfdr.png');
+  }
+
+  &-thumbnail--maptalents {
+    background-image: url('/assets/maptalents.png');
+  }
+
+  &-thumbnail--taskmanager {
+    background-image: url('/assets/taskmanager.png');
+  }
+}

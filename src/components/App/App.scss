@@ -1,66 +1,14 @@
 @use '../../styles/variables' as v;
 
 .App {
-  background-color: v.$main-bg-color;
-  color: v.$main-font-color;
-  text-align: center;
+  padding: 0 calc(10 * v.$gap);
+  color: #676767;
 
-  .parachutiste {
-    font-family: 'Nova Square', sans-serif;
-    padding: 0.2 * v.$gap;
-    background: v.$para-border-gradient;
+  p {
+    font-size: v.$p-font-size;
   }
 
-  .building {
-    font-family: 'Nova Square', sans-serif;
-    padding: 0.2 * v.$gap;
-    background: v.$build-border-gradient;
-  }
-
-  .dev {
-    font-family: 'Nova Square', sans-serif;
-    padding: 0.2 * v.$gap;
-    background: v.$dev-border-gradient;
-  }
-
-  .custom-border {
-    padding: calc(1 / 3 * v.$gap);
-
-    .app-wrapper {
-      background-color: v.$main-bg-color;
-      padding: calc(10 * v.$gap) 1em;
-      height: 98.7vh;
-
-      p {
-        font-size: 2em;
-        margin-bottom: 2em;
-      }
-
-      li {
-        margin: 1em 0;
-      }
-
-      a:hover {
-        font-size: 1.2em;
-        transition: 1s;
-      }
-
-      header {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      footer {
-        position: absolute;
-        bottom: v.$gap;
-        font-size: v.$footer-font-size;
-      }
-    }
-  }
-}
-
-@media (min-width: 900px) {
-  header {
-    align-items: center;
+  strong {
+    color: v.$strong-color;
   }
 }

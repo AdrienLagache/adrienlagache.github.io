@@ -1,23 +1,34 @@
 @use '../../styles/variables' as v;
 
-.header-wrapper {
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: calc(1.5 * v.$gap) 10%;
   margin: auto;
-  .header-network {
-    position: relative;
-    bottom: 0.3em;
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid v.$header-border-color;
 
-    .header-network__pic {
-      width: 2em;
-      margin: 0.2em 0;
-    }
+  h1 {
+    font-size: v.$h1-font-size;
+    color: v.$strong-color;
+  }
+
+  ul {
+    display: flex;
+    gap: calc(1.5 * v.$gap);
   }
 }
 
-@media (min-width: 900px) {
-  .header-network__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: v.$gap;
-  }
+.header--visible {
+  top: 0;
+  transition: top 0.4s ease-out;
+}
+.header--hidden {
+  top: calc(-6.2 * v.$gap);
+  transition: top 0.4s ease-out;
 }

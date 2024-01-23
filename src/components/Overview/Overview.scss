@@ -1,96 +1,20 @@
 @use '../../styles/variables' as v;
 
-.overview-wrapper {
-  .overview-title {
-    font-size: v.$h1-font-size;
-    margin-bottom: v.$gap;
-    text-shadow: 2px 2px 2px #f8a432;
+.overview {
+  padding: 0 20%;
+  margin: auto;
+  margin-top: calc(10 * v.$gap);
+  line-height: 2em;
+
+  .overview-description,
+  .overview-list__item {
+    text-align: justify;
+    font-size: v.$overview-font-size;
   }
 
-  .overview-title__parachutiste {
-    text-shadow: 2px 2px 2px v.$para-border-color;
-  }
-
-  .overview-title__building {
-    text-shadow: 2px 2px 2px v.$build-border-color;
-  }
-
-  .overview-title__dev {
-    text-shadow: 2px 2px 2px v.$dev-border-color;
-  }
-
-  .overview-description {
-    font-size: v.$main-font-size;
-  }
-
-  .overview-description__static {
-    font-size: calc(0.8 * v.$main-font-size);
-  }
-
-  .overview-description__para {
-    border-left: solid 1px v.$para-border-color;
-    padding-left: calc(1 / 2 * v.$gap);
-  }
-
-  .overview-description__build {
-    border-left: solid 1px v.$build-border-color;
-    padding-left: calc(1 / 2 * v.$gap);
-  }
-
-  .overview-description__dev {
-    border-left: solid 1px v.$dev-border-color;
-    padding-left: calc(1 / 2 * v.$gap);
-  }
-
-  :last-child {
-    margin-top: v.$gap;
-  }
-}
-
-@media (min-width: 380px) {
-  .overview-wrapper {
-    margin: 25% 0;
-  }
-}
-
-@media (min-width: 700px) {
-  .overview-wrapper {
-    margin: 15% 0;
-
-    .overview-title {
-      font-size: calc(1.2 * v.$h1-font-size);
-    }
-
-    .overview-description {
-      font-size: calc(1.2 * v.$main-font-size);
-    }
-
-    .overview-description__static {
-      font-size: v.$main-font-size;
-    }
-  }
-}
-
-@media (min-width: 1000px) {
-  .overview-wrapper {
-    margin: 10% 0;
-
-    .overview-title {
-      font-size: calc(1.4 * v.$h1-font-size);
-    }
-
-    .overview-description {
-      font-size: calc(1.4 * v.$main-font-size);
-    }
-
-    .overview-description__static {
-      font-size: calc(1.2 * v.$main-font-size);
-    }
-  }
-}
-
-@media (min-width: 1400px) {
-  .overview-wrapper {
-    margin: 7% 5%;
+  .overview-list {
+    margin: v.$gap 0;
+    list-style-type: disc;
+    list-style-position: inside;
   }
 }
