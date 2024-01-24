@@ -11,6 +11,7 @@
   border-top: 1px solid v.$header-border-color;
   width: 65%;
   margin: auto;
+  padding-top: calc(0.5 * v.$gap);
 
   h1 {
     font-size: v.$h3-font-size;
