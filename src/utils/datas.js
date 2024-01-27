@@ -15,7 +15,7 @@ export default [
     name: 'maptalents',
     title:
       '<span>MapTalents</span> - <strong>REACT</strong>, <strong>REDUX</strong>, <strong>NestJS</strong>',
-    url: 'https://github.com/AdrienLagache/MapTalents',
+    url: 'https://maptalents.website',
     description:
       'Ce projet vise à créer une plateforme web interactive pour trouver les développeurs à proximité sur une carte géographique ou une liste.',
     details:
