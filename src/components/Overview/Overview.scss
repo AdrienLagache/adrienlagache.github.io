@@ -1,9 +1,8 @@
 @use '../../styles/variables' as v;
 
 .overview {
-  padding: 0 20%;
-  margin: auto;
-  margin-top: calc(10 * v.$gap);
+  padding: 0 10%;
+  margin-top: calc(9 * v.$gap);
   line-height: 2em;
 
   .overview-description,
@@ -16,5 +15,40 @@
     margin: v.$gap 0;
     list-style-type: disc;
     list-style-position: inside;
+  }
+
+  .overview-subtitle {
+    font-size: v.$p-font-size;
+  }
+}
+
+@media (min-width: 900px) {
+  .overview {
+    .overview-description,
+    .overview-list__item {
+      font-size: 1.5em;
+    }
+
+    .overview-subtitle {
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .overview {
+    padding: 0 20%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .overview {
+    padding: 0 25%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .overview {
+    padding: 0 30%;
   }
 }
