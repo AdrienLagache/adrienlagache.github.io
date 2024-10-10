@@ -19,7 +19,7 @@ function Overview() {
         </li>
       </ul>
 
-      <p>
+      <p className="overview-subtitle">
         Ma force réside dans ma capacité à naviguer avec aisance entre le
         front-end et le back-end.
       </p>

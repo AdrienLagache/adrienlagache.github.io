@@ -1,12 +1,13 @@
 @use '../../styles/variables' as v;
 
 .card {
-  width: 65%;
-  margin: auto;
+  // height: 350px;
+  margin: 0 auto;
+  margin-bottom: calc(3 * v.$gap);
 
-  &-title {
-    margin-top: calc(4 * v.$gap);
-  }
+  // &-title {
+  //   margin-top: calc(4 * v.$gap);
+  // }
 
   &-title span {
     font-weight: bold;
@@ -14,18 +15,20 @@
 
   &-thumbnail {
     display: block;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    padding: 5% 5% 10% 5%;
+    // padding: 5% 5% 10% 5%;
+    padding: 2% 5%;
     margin-top: v.$gap;
     border-radius: 5px;
+    height: 300px;
 
     h3 {
       font-size: v.$h3-font-size;
       border-bottom: 1px solid v.$card-border-color;
-      padding: calc(0.4 * v.$gap) 0;
-      margin: calc(1 * v.$gap) 0;
+      padding: calc(0.5 * v.$gap);
+      margin: calc(0.3 * v.$gap) 0;
     }
 
     p,
@@ -60,5 +63,11 @@
 
   &-thumbnail--taskmanager {
     background-image: url('/assets/taskmanager.png');
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    width: 45%;
   }
 }

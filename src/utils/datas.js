@@ -8,7 +8,7 @@ export default [
     description:
       'Ce projet vise à créer une plateforme web interactive pour trouver les développeurs à proximité sur une carte géographique ou une liste.',
     details:
-      'Il a été réalisé avec <strong>REACT</strong> et <strong>Redux</strong> pour la partie front-end et avec <strong>NestJS</strong> pour la partie back-end.<br/>Nous avons travaillé en équipe de 4 et mes réalisations principales sont la partie inscription (front + back) et la gestion des filtres de recherche (back).',
+      'Il a été réalisé avec <strong>REACT</strong> et <strong>Redux</strong> pour la partie front-end et avec <strong>NestJS</strong> pour la partie back-end.<br/>Mes réalisations principales sont la partie inscription (front + back) et la gestion des filtres de recherche (back).',
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export default [
     id: 3,
     name: 'vbr',
     title:
-      '<span>Virtual Best Racing</span> - <strong>Javascript</strong>, <strong>Single Page Application</strong>',
+      '<span>Virtual Best Racing</span> - <strong>React</strong>, <strong>Single Page Application</strong>',
     url: 'https://precious-wash.surge.sh',
     description:
       'Ce site sert de vitrine pour la team e-sport "Virtual Best Racing" afin de partager ses succés, présenter ses membres et vendre des articles',
