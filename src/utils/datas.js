@@ -1,5 +1,15 @@
 export default [
   {
+    id: 1,
+    name: 'forge-club',
+    title:
+      '<span>Forge Club</span> - <strong>Next.js</strong>, <strong>Landing page</strong>',
+    url: 'https://forge-club.surge.sh',
+    description:
+      "Création d'une landing page moderne et responsive pour Forge Club, une salle de sport au style industriel, intégrant effets visuels avancés, formulaire de contact, thème sombre/clair et identité visuelle personnalisée",
+    details: 'Il a été réalisé avec <strong>Next.js</strong>',
+  },
+  {
     id: 2,
     name: 'maptalents',
     title:
@@ -20,16 +30,6 @@ export default [
       "Ce site sert d'interface aux organisateurs d'un championnat e-sport afin d'afficher les classements, calendriers et line-up des différentes saisons",
     details:
       "Il a été réalisé en <strong>PHP</strong> à partir d'une architecture <strong>MVC</strong>.<br/><strong>Composer</strong> a été utilisé comme gestionnaire de dépendance pour AltoRouter et AltoDispatcher.",
-  },
-  {
-    id: 1,
-    name: 'forge-club',
-    title:
-      '<span>Forge Club</span> - <strong>Next.js</strong>, <strong>Landing page</strong>',
-    url: 'https://forge-club.surge.sh',
-    description:
-      "Création d'une landing page moderne et responsive pour Forge Club, une salle de sport au style industriel, intégrant effets visuels avancés, formulaire de contact, thème sombre/clair et identité visuelle personnalisée",
-    details: 'Il a été réalisé avec <strong>Next.js</strong>',
   },
   {
     id: 4,
