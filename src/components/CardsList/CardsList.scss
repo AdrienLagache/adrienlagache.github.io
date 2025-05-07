@@ -1,8 +1,0 @@
-@use '../../styles/variables' as v;
-
-.cardsList {
-  margin: calc(5 * v.$gap) 10%;
-  display: flex;
-  flex-wrap: wrap;
-  // gap: v.$gap;
-}
