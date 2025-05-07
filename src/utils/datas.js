@@ -1,6 +1,6 @@
 export default [
   {
-    id: 1,
+    id: 2,
     name: 'maptalents',
     title:
       '<span>MapTalents</span> - <strong>REACT</strong>, <strong>REDUX</strong>, <strong>NestJS</strong>',
@@ -11,7 +11,7 @@ export default [
       'Il a été réalisé avec <strong>REACT</strong> et <strong>Redux</strong> pour la partie front-end et avec <strong>NestJS</strong> pour la partie back-end.<br/>Mes réalisations principales sont la partie inscription (front + back) et la gestion des filtres de recherche (back).',
   },
   {
-    id: 2,
+    id: 3,
     name: 'cfdr',
     title:
       '<span>C.F.D.R.</span> - <strong>PHP</strong>, <strong>MVC</strong>, <strong>Composer</strong>',
@@ -22,15 +22,14 @@ export default [
       "Il a été réalisé en <strong>PHP</strong> à partir d'une architecture <strong>MVC</strong>.<br/><strong>Composer</strong> a été utilisé comme gestionnaire de dépendance pour AltoRouter et AltoDispatcher.",
   },
   {
-    id: 3,
-    name: 'vbr',
+    id: 1,
+    name: 'forge-club',
     title:
-      '<span>Virtual Best Racing</span> - <strong>React</strong>, <strong>Single Page Application</strong>',
-    url: 'https://precious-wash.surge.sh',
+      '<span>Forge Club</span> - <strong>Next.js</strong>, <strong>Landing page</strong>',
+    url: 'https://forge-club.surge.sh',
     description:
-      'Ce site sert de vitrine pour la team e-sport "Virtual Best Racing" afin de partager ses succés, présenter ses membres et vendre des articles',
-    details:
-      'Il a été réalisé avec <strong>REACT</strong>. Ce site est en cours de construction',
+      "Création d'une landing page moderne et responsive pour Forge Club, une salle de sport au style industriel, intégrant effets visuels avancés, formulaire de contact, thème sombre/clair et identité visuelle personnalisée",
+    details: 'Il a été réalisé avec <strong>Next.js</strong>',
   },
   {
     id: 4,
