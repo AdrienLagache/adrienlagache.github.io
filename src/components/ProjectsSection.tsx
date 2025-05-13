@@ -17,19 +17,19 @@ const projects = [
     link: "https://forge-club.surge.sh",
   },
   {
-    title: "MapTalents",
-    image: "/maptalents.jpg",
-    description: "Plateforme de mise en relation via carte interactive",
-    techs: ["React", "Redux", "NestJS"],
-    link: "https://maptalents.website/carte",
-  },
-  {
     title: "Locali",
     image: "/greenbite.jpg",
     description:
       "Landing pages pour une entreprise fictive de livraison de repas",
     techs: ["Next.js", "Tailwind", "Typescript"],
     link: "https://greenbite.surge.sh",
+  },
+  {
+    title: "MapTalents",
+    image: "/maptalents.jpg",
+    description: "Plateforme de mise en relation via carte interactive",
+    techs: ["React", "Redux", "NestJS"],
+    link: "https://maptalents.website/carte",
   },
 ];
 
