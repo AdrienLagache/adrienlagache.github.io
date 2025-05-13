@@ -2,21 +2,6 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    title: "MilleShop",
-    image: "/millesim.jpg",
-    description:
-      "Site vitrine pour Milleshop, conception et réalisation de pièces sur mesure",
-    techs: ["Next.js", "Tailwind", "Typescript"],
-    link: "https://millesim.surge.sh",
-  },
-  {
-    title: "Forge Club",
-    image: "/forge-club.jpg",
-    description: "Landing page pour une salle de sport fictive avec Next.js",
-    techs: ["Next.js", "TypeScript", "Tailwind"],
-    link: "https://forge-club.surge.sh",
-  },
-  {
     title: "Locali",
     image: "/greenbite.jpg",
     description:
@@ -25,11 +10,26 @@ const projects = [
     link: "https://greenbite.surge.sh",
   },
   {
+    title: "MilleShop",
+    image: "/millesim.jpg",
+    description:
+      "Site vitrine pour Milleshop, conception et réalisation de pièces sur mesure",
+    techs: ["Next.js", "Tailwind", "Typescript"],
+    link: "https://millesim.surge.sh",
+  },
+  {
     title: "MapTalents",
     image: "/maptalents.jpg",
     description: "Plateforme de mise en relation via carte interactive",
     techs: ["React", "Redux", "NestJS"],
     link: "https://maptalents.website/carte",
+  },
+  {
+    title: "Forge Club",
+    image: "/forge-club.jpg",
+    description: "Landing page pour une salle de sport fictive avec Next.js",
+    techs: ["Next.js", "TypeScript", "Tailwind"],
+    link: "https://forge-club.surge.sh",
   },
 ];
 
