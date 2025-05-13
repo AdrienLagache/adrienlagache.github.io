@@ -49,7 +49,7 @@ export default function Footer() {
 
           </a>
         </div>
-        <p>
+        <p className="text-center">
           © {new Date().getFullYear()} Adrien Lagache – Tous droits réservés.
         </p>
         <p>
