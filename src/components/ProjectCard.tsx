@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 interface ProjectCardProps {
     title: string
     image: string
@@ -14,7 +16,7 @@ interface ProjectCardProps {
     link,
   }: ProjectCardProps) {
     return (
-      <a
+      <Link
         href={link}
         target="_blank"
         rel="noopener noreferrer"
@@ -23,11 +25,11 @@ interface ProjectCardProps {
         <img
           src={image}
           alt={title}
-          className="w-full h-48 object-cover group-hover:opacity-90 transition"
+          className="w-full h-60 object-cover group-hover:opacity-90 transition"
         />
         <div className="p-4">
-          <h3 className="text-white text-lg font-semibold mb-2">{title}</h3>
-          <p className="text-sm text-neutral-400 mb-3">{description}</p>
+          <h3 className="text-white text-lg font-semibold my-2">{title}</h3>
+          <p className="text-sm text-neutral-400 mb-3 h-12">{description}</p>
           <ul className="flex flex-wrap gap-2 text-xs text-cyan-400 font-mono">
             {techs.map((tech, i) => (
               <li key={i} className="bg-black/30 px-2 py-1 rounded border border-cyan-700">
@@ -36,7 +38,7 @@ interface ProjectCardProps {
             ))}
           </ul>
         </div>
-      </a>
+      </Link>
     )
   }
   

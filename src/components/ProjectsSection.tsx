@@ -41,7 +41,7 @@ export default function ProjectsSection() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="flex justify-center basis-[320px] max-w-[360px] grow"
+            className="flex justify-center basis-[400px] max-w-[500px] grow"
           >
             <ProjectCard {...project} />
           </div>
