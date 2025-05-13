@@ -18,18 +18,18 @@ const projects = [
     link: "https://millesim.surge.sh",
   },
   {
-    title: "MapTalents",
-    image: "/maptalents.jpg",
-    description: "Plateforme de mise en relation via carte interactive",
-    techs: ["React", "Redux", "NestJS"],
-    link: "https://maptalents.website/carte",
-  },
-  {
     title: "Forge Club",
     image: "/forge-club.jpg",
     description: "Landing page pour une salle de sport fictive avec Next.js",
     techs: ["Next.js", "TypeScript", "Tailwind"],
     link: "https://forge-club.surge.sh",
+  },
+  {
+    title: "MapTalents",
+    image: "/maptalents.jpg",
+    description: "Plateforme de mise en relation via carte interactive",
+    techs: ["React", "Redux", "NestJS"],
+    link: "https://maptalents.website/carte",
   },
 ];
 
