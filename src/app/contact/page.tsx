@@ -72,7 +72,7 @@ export default function ContactPage() {
 
           {/* Formulaire à droite */}
           <form
-            action="https://formspree.io/f/your-id" // remplace si besoin
+            action="https://formspree.io/f/xdkgpakd"
             method="POST"
             className="flex-1 space-y-6"
           >
@@ -118,7 +118,7 @@ export default function ContactPage() {
               <input
                 type="text"
                 id="subject"
-                name="subject"
+                name="message[subject]"
                 required
                 className="w-full px-4 py-2 bg-neutral-900 text-white border border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
               />
