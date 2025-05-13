@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '', // vide car tu déploies à la racine
+  basePath: '',
   images: {
     unoptimized: true
   }
