@@ -19,7 +19,7 @@ export default function Hero() {
       );
       return () => clearTimeout(timeout);
     } else {
-      setTimeout(() => setShowButton(true), 1000); // délai pour le bouton
+      setTimeout(() => setShowButton(true), 100); // délai pour le bouton
     }
   }, [visibleChars]);
 
