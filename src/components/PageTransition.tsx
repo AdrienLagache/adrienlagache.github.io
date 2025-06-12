@@ -10,10 +10,16 @@ export default function PageTransition({ children }: PageTransitionProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    // Scroll vers le haut sauf si il y a une ancre
+    const hash = window.location.hash;
+    if (!hash) {
+      window.scrollTo(0, 0);
+    }
+
     // Démarrer l'animation après le montage
     const timer = setTimeout(() => {
       setIsVisible(true);
-    });
+    }, 100);
 
     return () => clearTimeout(timer);
   }, []); // Seulement au montage

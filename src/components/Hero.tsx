@@ -24,7 +24,7 @@ export default function Hero() {
   }, [visibleChars]);
 
   return (
-    <section className="flex flex-col items-start justify-center text-left px-6 sm:px-12 py-12 max-w-7xl mx-auto min-h-screen">
+    <section className="flex flex-col items-start justify-center text-left px-6 sm:px-12 py-12 max-w-7xl mx-auto min-h-[calc(100vh-5rem)]">
       {/* Titre sans animation mais avec couleurs */}
       <h1 className="text-3xl sm:text-5xl font-bold leading-tight text-white mb-6 break-words">
         Spécialisé en{" "}
@@ -35,10 +35,18 @@ export default function Hero() {
       </h1>
 
       {/* Paragraphe animé lettre par lettre */}
-      <p className="text-sm sm:text-lg text-neutral-400 mb-8 max-w-2xl min-h-[4rem]">
-        {paragraphText.slice(0, visibleChars)}
-        <span className="inline-block w-[1ch] animate-blink text-neutral-400">|</span>
-      </p>
+      <div className="text-sm sm:text-lg text-neutral-400 mb-8 max-w-2xl relative">
+        {/* Texte complet invisible pour réserver l'espace */}
+        <p className="opacity-0 pointer-events-none" aria-hidden="true">
+          {paragraphText}
+        </p>
+        
+        {/* Texte visible qui s'affiche progressivement */}
+        <p className="absolute top-0 left-0 w-full">
+          {paragraphText.slice(0, visibleChars)}
+          <span className="inline-block w-[1ch] animate-blink text-neutral-400">|</span>
+        </p>
+      </div>
 
       {/* Bouton animé après fin d’écriture */}
       <div
