@@ -10,6 +10,14 @@ const projects = [
     link: "https://greenbite.surge.sh",
   },
   {
+    title: "ninja-tools",
+    image: "/ninja-tools.jpg",
+    description:
+      "Site vitrine pour une entreprise de conseil IT et développement de solutions web et Saas",
+    techs: ["Angular 19", "Tailwind + CSS", "Typescript"],
+    link: "https://ninja-tools.surge.sh",
+  },
+  {
     title: "MilleShop",
     image: "/millesim.jpg",
     description:

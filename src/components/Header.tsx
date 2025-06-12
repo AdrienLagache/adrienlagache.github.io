@@ -1,12 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isProjectsInView, setIsProjectsInView] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -33,6 +36,54 @@ export default function Header() {
     };
   }, [menuOpen]);
 
+  // Détection de la section projets visible
+  useEffect(() => {
+    const projectsElement = document.getElementById("projets");
+    
+    if (!projectsElement) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsProjectsInView(entry.isIntersecting);
+      },
+      {
+        threshold: 0.3, // 30% de la section visible
+        rootMargin: "-100px 0px -100px 0px" // Offset pour le header sticky
+      }
+    );
+
+    observer.observe(projectsElement);
+
+    return () => observer.disconnect();
+  }, [pathname]);
+
+  // Détermine quel lien est actif
+  const isLinkActive = (linkPath: string) => {
+    if (linkPath === "/contact") {
+      return pathname === "/contact";
+    }
+    
+    if (linkPath === "/#projets") {
+      return pathname === "/" && isProjectsInView;
+    }
+    
+    if (linkPath === "/") {
+      return pathname === "/" && !isProjectsInView;
+    }
+    
+    return false;
+  };
+
+  const getLinkClasses = (linkPath: string) => {
+    const baseClasses = "transition";
+    const activeClasses = "text-cyan-400";
+    const inactiveClasses = "hover:text-cyan-400";
+    
+    return isLinkActive(linkPath) 
+      ? `${baseClasses} ${activeClasses}`
+      : `${baseClasses} ${inactiveClasses}`;
+  };
+
   return (
     <>
       <header className="w-full px-6 py-4 border-b border-neutral-800 bg-black text-white sticky top-0 z-50">
@@ -47,13 +98,13 @@ export default function Header() {
 
           {/* Menu Desktop */}
           <div className="hidden md:flex gap-30 text-sm font-medium">
-            <Link href="/" className="hover:text-cyan-400 transition">
+            <Link href="/" className={getLinkClasses("/")}>
               Accueil
             </Link>
-            <Link href="/#projets" className="hover:text-cyan-400 transition">
+            <Link href="/#projets" className={getLinkClasses("/#projets")}>
               Projets
             </Link>
-            <Link href="/contact" className="hover:text-cyan-400 transition">
+            <Link href="/contact" className={getLinkClasses("/contact")}>
               Contact
             </Link>
           </div>
@@ -80,21 +131,21 @@ export default function Header() {
       >
         <Link
           href="/"
-          className="hover:text-cyan-400 transition"
+          className={getLinkClasses("/")}
           onClick={() => setMenuOpen(false)}
         >
           Accueil
         </Link>
         <Link
           href="/#projets"
-          className="hover:text-cyan-400 transition"
+          className={getLinkClasses("/#projets")}
           onClick={() => setMenuOpen(false)}
         >
           Projets
         </Link>
         <Link
           href="/contact"
-          className="hover:text-cyan-400 transition"
+          className={getLinkClasses("/contact")}
           onClick={() => setMenuOpen(false)}
         >
           Contact
