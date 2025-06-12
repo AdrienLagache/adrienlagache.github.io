@@ -19,23 +19,23 @@ export default function Hero() {
       );
       return () => clearTimeout(timeout);
     } else {
-      setTimeout(() => setShowButton(true), 100); // délai pour le bouton
+      setTimeout(() => setShowButton(true), 2000);
     }
   }, [visibleChars]);
 
   return (
     <section className="flex flex-col items-start justify-center text-left px-6 sm:px-12 py-12 max-w-7xl mx-auto min-h-[calc(100vh-5rem)]">
       {/* Titre sans animation mais avec couleurs */}
-      <h1 className="text-3xl sm:text-5xl font-bold leading-tight text-white mb-6 break-words">
+      <h1 className="text-3xl sm:text-5xl font-bold leading-tight text-white mb-10 break-words">
         Spécialisé en{" "}
         <span className="text-pink-400">Next.js</span> et{" "}
-        <span className="text-cyan-400">React</span>, je développe des interfaces modernes tout en maîtrisant les bases d’une architecture backend avec{" "}
+        <span className="text-cyan-400">React</span>, je développe des interfaces modernes tout en maîtrisant les bases d'une architecture backend avec{" "}
         <span className="text-red-500">NestJS</span> et{" "}
         <span className="text-yellow-400">Docker</span>.
       </h1>
 
       {/* Paragraphe animé lettre par lettre */}
-      <div className="text-sm sm:text-lg text-neutral-400 mb-8 max-w-2xl relative">
+      <div className="text-sm sm:text-lg text-neutral-400 mb-20 max-w-4xl relative">
         {/* Texte complet invisible pour réserver l'espace */}
         <p className="opacity-0 pointer-events-none" aria-hidden="true">
           {paragraphText}
@@ -48,12 +48,12 @@ export default function Hero() {
         </p>
       </div>
 
-      {/* Bouton animé après fin d’écriture */}
+      {/* Bouton animé après fin d'écriture */}
       <div
-        className={`transform transition-all duration-700 ease-out ${
+        className={`transform transition-all duration-700 ease-in-out ${
           showButton
             ? "opacity-100 translate-y-0"
-            : "opacity-0 translate-y-2 pointer-events-none"
+            : "opacity-0 translate-y-4 pointer-events-none"
         }`}
       >
         <a

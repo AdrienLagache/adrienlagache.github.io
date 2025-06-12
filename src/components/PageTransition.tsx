@@ -26,10 +26,10 @@ export default function PageTransition({ children }: PageTransitionProps) {
 
   return (
     <div
-      className={`w-full h-full transform transition-all duration-700 ease-out ${
+      className={`w-full h-full transform transition-all duration-600 ease-out ${
         isVisible
           ? "opacity-100 translate-y-0"
-          : "opacity-0 translate-y-4"
+          : "opacity-0 translate-y-6"
       }`}
     >
       {children}
