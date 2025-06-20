@@ -26,7 +26,7 @@ export default function Hero() {
   return (
     <section className="flex flex-col items-start justify-center text-left px-6 sm:px-12 py-12 max-w-7xl mx-auto min-h-[calc(100vh-5rem)]">
       {/* Titre sans animation mais avec couleurs */}
-      <h1 className="text-3xl sm:text-5xl font-bold leading-tight text-white mb-10 break-words">
+      <h1 className="text-3xl sm:text-5xl font-bold leading-tight text-foreground mb-10 break-words">
         Spécialisé en{" "}
         <span className="text-pink-400">Next.js</span> et{" "}
         <span className="text-cyan-400">React</span>, je développe des interfaces modernes tout en maîtrisant les bases d'une architecture backend avec{" "}
@@ -58,7 +58,7 @@ export default function Hero() {
       >
         <a
           href="#projets"
-          className="px-6 py-3 bg-cyan-600 text-white text-sm sm:text-lg rounded-md hover:bg-cyan-500 transition"
+          className="px-6 py-3 bg-cyan-600 text-foreground text-sm sm:text-lg rounded-md hover:bg-cyan-500 transition"
         >
           Voir mes projets
         </a>

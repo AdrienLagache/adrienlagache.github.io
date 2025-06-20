@@ -44,7 +44,7 @@ const projects = [
 export default function ProjectsSection() {
   return (
     <section id="projets" className="px-6 sm:px-24 w-full py-12 mx-auto">
-      <h2 className="text-3xl font-bold text-white ml-5 mb-12">Projets</h2>
+      <h2 className="text-3xl font-bold text-foreground ml-5 mb-12">Projets</h2>
       <div className="flex flex-wrap justify-center gap-8">
         {projects.map((project, index) => (
           <div

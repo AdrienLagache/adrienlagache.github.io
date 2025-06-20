@@ -86,12 +86,12 @@ export default function Header() {
 
   return (
     <>
-      <header className="w-full px-6 py-4 border-b border-neutral-800 bg-black text-white sticky top-0 z-50">
+      <header className="w-full px-6 py-4 border-b border-neutral-800 bg-background text-foreground sticky top-0 z-50">
         <nav className="mx-auto flex justify-between items-center">
           {/* Logo */}
           <Link
             href="/"
-            className="text-2xl font-bold tracking-tight text-white hover:text-cyan-400 transition"
+            className="text-2xl font-bold tracking-tight text-foreground hover:text-cyan-400 transition"
           >
             Adrien Lagache
           </Link>
@@ -111,7 +111,7 @@ export default function Header() {
 
           {/* Burger Button Mobile */}
           <button
-            className="md:hidden text-white text-3xl"
+            className="md:hidden text-foreground text-3xl"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle navigation"
           >
@@ -123,7 +123,7 @@ export default function Header() {
       {/* Menu Mobile */}
       <div
         ref={menuRef}
-        className={`md:hidden fixed top-15 left-0 w-full bg-black border-t border-neutral-800 px-6 py-6 space-y-4 flex flex-col gap-4 text-base font-medium transition-all duration-300 ease-in-out z-40 ${
+        className={`md:hidden fixed top-15 left-0 w-full bg-background border-t border-neutral-800 px-6 py-6 space-y-4 flex flex-col gap-4 text-base font-medium transition-all duration-300 ease-in-out z-40 ${
           menuOpen
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-2 pointer-events-none"

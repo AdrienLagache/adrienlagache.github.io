@@ -4,7 +4,7 @@ export default function ContactPage() {
   return (
     <section className="w-full px-6 sm:px-12 py-12">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl sm:text-4xl font-bold text-white mb-12">
+        <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-12">
           Me contacter
         </h1>
 
@@ -12,11 +12,11 @@ export default function ContactPage() {
           {/* Coordonnées à gauche */}
           <div className="flex-1 space-y-6 text-neutral-400 text-sm order-1 lg:order-none">
             <div>
-              <FaEnvelope className="inline mr-2 text-white" />
+              <FaEnvelope className="inline mr-2 text-foreground" />
               lagacheadrien64@gmail.com
             </div>
             <div>
-              <FaLinkedin className="inline mr-2 text-white" />
+              <FaLinkedin className="inline mr-2 text-foreground" />
               <a
                 href="https://www.linkedin.com/in/adrien-lagache-163462282/"
                 className="hover:text-cyan-400"
@@ -27,7 +27,7 @@ export default function ContactPage() {
               </a>
             </div>
             <div>
-              <FaGithub className="inline mr-2 text-white" />
+              <FaGithub className="inline mr-2 text-foreground" />
               <a
                 href="https://github.com/AdrienLagache"
                 className="hover:text-cyan-400"
@@ -44,7 +44,7 @@ export default function ContactPage() {
                 width="16"
                 height="16"
                 fill="currentColor"
-                className="inline mr-2 text-white"
+                className="inline mr-2 text-foreground"
               >
                 <circle cx="12" cy="12" r="10" />
                 <text
@@ -88,7 +88,7 @@ export default function ContactPage() {
                 id="name"
                 name="name"
                 required
-                className="w-full px-4 py-2 bg-neutral-900 text-white border border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                className="w-full px-4 py-2 bg-neutral-900 text-foreground border border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
               />
             </div>
 
@@ -104,7 +104,7 @@ export default function ContactPage() {
                 id="email"
                 name="email"
                 required
-                className="w-full px-4 py-2 bg-neutral-900 text-white border border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                className="w-full px-4 py-2 bg-neutral-900 text-foreground border border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
               />
             </div>
 
@@ -120,7 +120,7 @@ export default function ContactPage() {
                 id="subject"
                 name="message[subject]"
                 required
-                className="w-full px-4 py-2 bg-neutral-900 text-white border border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                className="w-full px-4 py-2 bg-neutral-900 text-foreground border border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
               />
             </div>
 
@@ -136,13 +136,13 @@ export default function ContactPage() {
                 name="message"
                 rows={5}
                 required
-                className="w-full px-4 py-2 bg-neutral-900 text-white border border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                className="w-full px-4 py-2 bg-neutral-900 text-foreground border border-neutral-700 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
               />
             </div>
 
             <button
               type="submit"
-              className="px-6 py-3 bg-cyan-600 text-white rounded-md hover:bg-cyan-500 transition"
+              className="px-6 py-3 bg-cyan-600 text-foreground rounded-md hover:bg-cyan-500 transition"
             >
               Envoyer
             </button>
