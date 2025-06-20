@@ -29,7 +29,7 @@ export default function Hero() {
       <h1 className="text-3xl sm:text-5xl font-bold leading-tight text-foreground mb-10 break-words">
         Spécialisé en{" "}
         <span className="text-pink-400">Next.js</span> et{" "}
-        <span className="text-cyan-400">React</span>, je développe des interfaces modernes tout en maîtrisant les bases d'une architecture backend avec{" "}
+        <span className="text-cyan-400">React</span>, je développe des interfaces modernes tout en maîtrisant les bases d&apos;une architecture backend avec{" "}
         <span className="text-red-500">NestJS</span> et{" "}
         <span className="text-yellow-400">Docker</span>.
       </h1>

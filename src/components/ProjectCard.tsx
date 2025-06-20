@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 interface ProjectCardProps {
     title: string
@@ -22,9 +23,11 @@ interface ProjectCardProps {
         rel="noopener noreferrer"
         className="rounded-lg border border-neutral-800 overflow-hidden hover:border-cyan-500 transition group bg-neutral-950"
       >
-        <img
+        <Image
           src={image}
           alt={title}
+          width={500}
+          height={240}
           className="w-full h-60 object-cover group-hover:opacity-90 transition"
         />
         <div className="p-4">
