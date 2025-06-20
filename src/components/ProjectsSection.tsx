@@ -7,7 +7,7 @@ const projects = [
     description:
       "Landing pages pour une entreprise fictive de livraison de repas",
     techs: ["Next.js", "Tailwind", "Typescript"],
-    link: "https://greenbite.surge.sh",
+    link: "https://llocali.vercel.app",
   },
   {
     title: "ninja-tools",
